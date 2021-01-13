@@ -23,7 +23,7 @@ const connect = function() {
 
 
     //command up
-    conn.write("Move: up");
+    // conn.write("Move: up");
     
     //setting interval
     let counter;
