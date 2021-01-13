@@ -1,8 +1,9 @@
 
+const stdin = process.stdin;
 
-
-
+const { write } = require('fs');
 const net = require('net');
+
 
 const connect = function() {
   const conn = net.createConnection({
@@ -15,6 +16,13 @@ const connect = function() {
   conn.on('data',(input) => {
     console.log(input);
   });
+  //notify when server connected
+  conn.on('connect',() => {
+    console.log(`Successfully connected to game server`);
+    conn.write('Name:apu');
+  });
+
+  
 
   return conn;
 };
