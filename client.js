@@ -65,12 +65,12 @@ const connect = function() {
 
 
 
-let handleInput = function(key,conn) {
+// let handleInput = function(key,conn) {
 
-  if (key === "\u0077") {
-    conn.write("Move: up");
-  }
-};
+//   if (key === "\u0077") {
+//     conn.write("Move: up");
+//   }
+// };
 
 
 

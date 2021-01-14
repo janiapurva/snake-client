@@ -4,7 +4,8 @@ const {setupInput} = require('./input')
 
 
 console.log('Connecting ...');
-connect();
+let connection = connect();
+
 
 /**
  * Setup User Interface
@@ -12,6 +13,6 @@ connect();
  */
 
 
-setupInput();
+setupInput(connection);
 
 //exports.modules = {handleUserInput};
