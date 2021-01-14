@@ -30,8 +30,14 @@ const handleUserInput = function(char) {
 
   } else if (char === "d") {
     connection.write("Move: right");
-
+  } else if (char === "z") {
+    connection.write("Say: Move away");
+  } else if (char === "m") {
+    connection.write("Say: Hii Man");
+  } else if (char === "o") {
+    connection.write("Say: Get out from my way");
   }
+
 };
 
 
